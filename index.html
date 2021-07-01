@@ -22,42 +22,41 @@
 </head>
 
 <body>
-    <nav class="index-nav">
-        <div class="logo-container">
-            <i class="fas fa-drafting-compass fa-2x text-color--accent-1 mx-3"></i>
-        </div>
-        <h4 class="company-name">TravelLogue</h4>
-        <div class="separator-lg"></div>
+    <nav class="site-navigation">
+        <nav class="index-nav">
+            <div class="logo-container">
+                <i class="fas fa-drafting-compass fa-2x text-color--accent-1 mx-3"></i>
+            </div>
+            <h4 class="company-name mr-2">TravelLogue</h4>
+            <div class="nav-separator mx-lg-3 mx-xl-5 d-none d-lg-block"></div>
 
-        <nav class="navbar navbar-expand-lg navbar-light px-0">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Destination</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pages
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <!-- <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
+            <nav class="ml-auto ml-sm-0 mr-4 mr-sm-0 navbar navbar-expand-sm navbar-light px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Blog
@@ -65,36 +64,38 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Not</a>
                             <a class="dropdown-item" href="#">Yet</a>
-                            <!-- <div class="dropdown-divider"></div> -->
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Implemented</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                    </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- The right side of the nav bar -->
+            <div class="index-nav--right-side d-none d-md-flex">
+                <p class="phone-number font-weight-bold d-none d-lg-block mr-2"><i
+                        class="fa fa-phone fa-flip-horizontal text-color--accent-1"></i> (123) 456-7891</p>
+                <div class="nav-separator mx-lg-2 mx-xl-4 d-none d-lg-block"></div>
+                <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in mx-2"></i></a>
+                <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g mx-2"></i></a>
+                <a href="#"><i class="fas fa-search mx-2 d-block d-lg-none search-icon--sm"></i></a>
             </div>
         </nav>
 
-        <!-- The right side of the nav bar -->
-        <div class="index-nav--right-side">
-            <p class="phone-number font-weight-bold mr-2"><i class="fa fa-phone fa-flip-horizontal text-color--accent-1"></i> (123) 456-7891</p>
-            <div class="separator-sm"></div>
-            <a href="#"><i class="fab fa-instagram mx-2"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in mx-2"></i></a>
-            <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g mx-2"></i></a>
-
-            <div class="search-box--spacer ml-2"></div>
-            <div class="search-box">
-                <i class="fas fa-search"></i>
-            </div>
-        </div>
-
+        <a href="#" class="search-box d-none d-lg-flex">
+            <i class="fas fa-search"></i>
+        </a>
     </nav>
 
-    <div class="carousel thing">
-        <img src="/images/chicken.jpg" />
+    <div class="greeting-container">
+        <!-- <h1>This is a test</h1> -->
+        <img src="./images/squirrel.jpg" width="100%" />
     </div>
 
     <section class="search-banner bg-color--secondary py-5 mx-0">
