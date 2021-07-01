@@ -8,6 +8,7 @@ $(() => {
     var $submitSearch = $(".search-banner-row button");
     var $projectTitles = $(".masonry-grid-image--overlay");
     var $masonryItems = $(".masonry-grid-item");
+    var $pagesDropdownMenu = $(".pages-dropdown-menu");
 
     window.onscroll = () => {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -46,11 +47,8 @@ $(() => {
             <img src="${imageSrc}">
         </div>`);
 
-        console.log("test");
         $newSlide.insertAfter($slideshowDummyDiv);
     });
-
-    console.log("test");
 
     // Got from W3Schools: https://www.w3schools.com/howto/howto_js_slideshow.asp
     var slideIndex = 0;
@@ -59,7 +57,6 @@ $(() => {
     function showSlides() {
         var i;
         var slides = document.getElementsByClassName("slideshow-slide");
-        console.log("test");
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -67,7 +64,6 @@ $(() => {
         if (slideIndex > slides.length) { slideIndex = 1 }
         slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 20000); // Change image every 2 seconds
-        console.log("END");
     }
 
     // Search functionality
@@ -87,5 +83,16 @@ $(() => {
 
     // Get current year.
     $(".current-year").text(new Date().getFullYear());
+
+    // Create links in navbar per each student navbar.  Links are under the 'Pages' dropdown
+    $masonryItems.each(function() {
+        var link = $(this).find('a').attr("href");
+        var text = $(this).find(".masonry-grid-image--overlay").text();
+        var $newDropdownItem = $(`<a class="dropdown-item" href="${link}">${text}</a>`);
+        console.log($newDropdownItem);
+        $pagesDropdownMenu.append($newDropdownItem);
+
+        console.log($pagesDropdownMenu);
+    });
 });
 

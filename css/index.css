@@ -377,10 +377,9 @@ input[type=submit].btn, .search-banner-row button {
 * ▲ Masonry Grid Styling ▲
 **=========================*/
 
-
-
-
-
+/*===================
+* ▼ Footer Styling ▼
+**===================*/
 
 .index-footer {
     display: flex;
@@ -399,3 +398,7 @@ input[type=submit].btn, .search-banner-row button {
     height: 100%;
     margin-left: 10px;
 }
+
+/*===================
+* ▲ Footer Styling ▲
+**===================*/
