@@ -53,6 +53,23 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 20px 0 20px 40px;
 }
 
+.index-nav--right-side {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.index-nav--right-side a {
+    color: rgba(var(--secondary), 0.5);
+    transition: 0.15s;
+}
+
+.index-nav--right-side a:hover {
+    color: rgba(var(--accent-1), 0.5);
+    transform: translateY(-2px);
+}
+
 .separator-lg {
     margin: 0 50px;
     width: 2px;
