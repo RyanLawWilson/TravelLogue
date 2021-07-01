@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <!-- Site styling based on this template: https://colorlib.com/wp/template/travelo/ -->
+    <!-- Random pictures gotten from: https://randomwordgenerator.com/picture.php -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,8 +97,32 @@
     </nav>
 
     <div class="greeting-container">
-        <!-- <h1>This is a test</h1> -->
-        <img src="./images/squirrel.jpg" width="100%" />
+        <div class="slideshow-container">
+            <div class="dummy"></div>
+
+            <div class="heading-container">
+                <h1 class="heading-text">Welcome</h1>
+                <p class="subheading-text">Take a look at our travel options below</p>
+                <button class="btn mt-5">Explore Now</button>
+            </div>
+
+            <!-- <div class="slideshow-slide fade">
+                <div class="slide-centerer"></div>
+                <img src="/images/tree.jpg">
+            </div>
+
+            <div class="slideshow-slide fade">
+                <div class="slide-centerer"></div>
+                <img src="/images/squirrel.jpg">
+            </div>
+
+            <div class="slideshow-slide fade">
+                <div class="slide-centerer"></div>
+                <img src="/images/railroad.jpg">
+            </div> -->
+
+            
+        </div>
     </div>
 
     <section class="search-banner bg-color--secondary py-5 mx-0">
@@ -135,18 +162,65 @@
         </div>
     </section>
 
-    <div class="container">
+    <div class="mx-2 mx-lg-5">
         <h1 class="text-center">Popular Destinations</h1>
         <p class="text-center">Plan a visit to one of these great destinations.</p>
 
-
+        <div class="masonry-grid">
+            <div class="masonry-grid-item">
+                <a href="#">
+                    <img src="/images/tree.jpg" class="masonry-grid-image">
+                    <p class="masonry-grid-image--overlay">Tree</p>
+                </a>
+            </div>
+            <div class="masonry-grid-item">
+                <a href="#">
+                    <img src="/images/boat.jpg" class="masonry-grid-image">
+                    <p class="masonry-grid-image--overlay">Boat</p>
+                </a>
+            </div>
+            <div class="masonry-grid-item">
+                <a href="#">
+                    <img src="/images/squirrel.jpg" class="masonry-grid-image">
+                    <p class="masonry-grid-image--overlay">Squirrel</p>
+                </a>
+            </div>
+            <div class="masonry-grid-item">
+                <a href="#">
+                    <img src="/images/railroad.jpg" class="masonry-grid-image">
+                    <p class="masonry-grid-image--overlay">Railroad</p>
+                </a>
+            </div>
+            <div class="masonry-grid-item">
+                <a href="#">
+                    <img src="/images/wonky_building.jpg" class="masonry-grid-image">
+                    <p class="masonry-grid-image--overlay">Building</p>
+                </a>
+            </div>
+            <div class="masonry-grid-item">
+                <a href="#">
+                    <img src="/images/tree.jpg" class="masonry-grid-image">
+                    <p class="masonry-grid-image--overlay">Tree</p>
+                </a>
+            </div>
+        </div>
     </div>
+
+    <footer class="index-footer bg-color--secondary">
+        <img src="/images/js.png" class="js-logo" >
+        <div class="footer-info">
+            <h2>Advanced JavaScript</h4>
+            <p>Live Project</p>
+            <p class="mt-auto"><i class="far fa-copyright"></i> <span class="current-year"></span></p>
+        </div>
+    </footer>
 
     <!-- Imported libraries -->
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/parallax.min.js"></script>
     <script src="/js/slick.min.js"></script>
+    <script src="/js/masonry-4.2.2.min.js"></script>
 
     <script src="/js/index.js"></script>
 </body>

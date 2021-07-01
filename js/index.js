@@ -3,6 +3,11 @@ $(() => {
     var $navBarContainer = $(".index-nav");
     var $searchButton = $(".search-box");
     var $navBarCollapse = $(".navbar-collapse");
+    var $slideshowDummyDiv = $(".dummy");
+    var $searchField = $(".search-banner-row input[type=text]");
+    var $submitSearch = $(".search-banner-row button");
+    var $projectTitles = $(".masonry-grid-image--overlay");
+    var $masonryItems = $(".masonry-grid-item");
 
     window.onscroll = () => {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -21,5 +26,66 @@ $(() => {
             $navBarCollapse.css("top", 75);
         }
     }
+
+    // Start the Masonry Grid
+    $('.masonry-grid').masonry({
+        // options
+        itemSelector: '.masonry-grid-item',
+        columnWidth: 120,
+        gutter: 1,
+        fitWidth: true,
+    });
+
+    // Use student project's as images in slideshow:
+    $(".masonry-grid-image").each(function () {
+        var imageSrc = $(this).attr("src");
+
+        // Create Slide and add to slideshow container:
+        var $newSlide = $(`<div class="slideshow-slide fade">
+            <div class="slide-centerer"></div>
+            <img src="${imageSrc}">
+        </div>`);
+
+        console.log("test");
+        $newSlide.insertAfter($slideshowDummyDiv);
+    });
+
+    console.log("test");
+
+    // Got from W3Schools: https://www.w3schools.com/howto/howto_js_slideshow.asp
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slideshow-slide");
+        console.log("test");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 20000); // Change image every 2 seconds
+        console.log("END");
+    }
+
+    // Search functionality
+    $searchField.on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $masonryItems.filter(function () {
+            $(this).toggle($(this).find(".masonry-grid-image--overlay").text().toLowerCase().indexOf(value) > -1);
+            $('.masonry-grid').masonry({
+                // options
+                itemSelector: '.masonry-grid-item',
+                columnWidth: 120,
+                gutter: 1,
+                fitWidth: true,
+            });
+        });
+    });
+
+    // Get current year.
+    $(".current-year").text(new Date().getFullYear());
 });
 
