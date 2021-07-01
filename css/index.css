@@ -8,20 +8,29 @@
     --accent-2: 0, 199, 182;
 }
 
-.main-color {
+.bg-color--main {
     background-color: rgb(var(--main));
 }
-
-.secondary-color {
+.bg-color--secondary {
     background-color: rgb(var(--secondary));
 }
-
-.accent-1-color {
+.bg-color--accent-1 {
     background-color: rgb(var(--accent-1));
 }
-
-.accent-2-color {
+.bg-color--accent-2 {
     background-color: rgb(var(--accent-2));
+}
+.text-color--main {
+    color: rgb(var(--main));
+}
+.text-color--secondary {
+    color: rgb(var(--secondary));
+}
+.text-color--accent-1 {
+    color: rgb(var(--accent-1));
+}
+.text-color--accent-2 {
+    color: rgb(var(--accent-2));
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -41,20 +50,76 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     background-color: rgb(var(--main));
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 0 20px 40px;
 }
 
 .separator-lg {
     margin: 0 50px;
     width: 2px;
-    background-color: rgba(var(--secondary), 0.10);
+    background-color: rgba(var(--secondary), 0.05);
     height: 40px;
     border-radius: 50%;
 }
 
+.separator-sm {
+    margin: 0 25px;
+    width: 2px;
+    background-color: rgba(var(--secondary), 0.05);
+    height: 40px;
+    border-radius: 50%;
+}
 
+.company-name {
+    transition: 0.15s;
+    cursor: pointer;
+}
 
+.company-name:hover {
+    transform: translateX(2px);
+}
 
+.navbar-nav {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item:first-child > .nav-link {
+    padding-left: 0;
+}
+
+.navbar-nav .nav-item:last-child > .nav-link {
+    padding-right: 0;
+}
+
+/* Need this specificity to override some of Bootstrap's styles */
+.navbar-nav .nav-item > .nav-link {
+    color: black;
+    transition: 0.15s;
+}
+
+.navbar-nav .nav-item > .nav-link:hover, .navbar-nav .nav-item > .nav-link:focus {
+    color: black;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .dropdown-item:focus, .navbar-nav .dropdown-item:hover {
+    background-color: rgb(var(--accent-1));
+    color: rgb(var(--main));
+}
+
+.search-box--spacer {
+    width: 100px;
+}
+
+.search-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(var(--accent-1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*====================
 * ▲ Nav Bar Styling ▲
