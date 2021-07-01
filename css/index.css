@@ -385,6 +385,7 @@ input[type=submit].btn, .search-banner-row button {
     display: flex;
     align-items: center;
     padding: 75px;
+    position: relative;
 }
 
 .js-logo {
