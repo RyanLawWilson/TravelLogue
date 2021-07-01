@@ -1,0 +1,104 @@
+:root {
+    /* These variables are used to color the background of divs */
+    --main: 255, 255, 255;
+    --secondary: 40, 39, 38;
+
+    /* These colors apply to buttons and other small things */
+    --accent-1: 255, 72, 76;
+    --accent-2: 0, 199, 182;
+}
+
+.main-color {
+    background-color: rgb(var(--main));
+}
+
+.secondary-color {
+    background-color: rgb(var(--secondary));
+}
+
+.accent-1-color {
+    background-color: rgb(var(--accent-1));
+}
+
+.accent-2-color {
+    background-color: rgb(var(--accent-2));
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+/*====================
+* ▼ Nav Bar Styling ▼
+**====================*/
+
+.index-nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgb(var(--main));
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.separator-lg {
+    margin: 0 50px;
+    width: 2px;
+    background-color: rgba(var(--secondary), 0.10);
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/*====================
+* ▲ Nav Bar Styling ▲
+**====================*/
+
+/*==========================
+* ▼ Search Banner Styling ▼
+**==========================*/
+
+.search-banner-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.search-banner-row input, .search-banner-row select, .search-banner-row option {
+    background-color: rgb(var(--secondary));
+    border-color: rgba(var(--main), 0.5);
+    color: rgba(var(--main), 0.5);
+    transition: 0.25s;
+    width: 200px;
+}
+
+.search-banner-row input:focus, .search-banner-row select:focus {
+    background-color: rgb(var(--secondary));
+    border-color: rgb(var(--accent-2));
+    color: rgba(var(--main), 1);
+    box-shadow: none;
+}
+
+option:hover {
+    font-weight: bold;
+}
+
+input[type=submit].btn, .search-banner-row button {
+    color: rgb(var(--main));
+    background-color: rgb(var(--accent-1));
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    font-weight: bold;
+}
+
+/*==========================
+* ▲ Search Banner Styling ▲
+**==========================*/

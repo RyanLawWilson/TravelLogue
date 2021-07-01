@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Removes this error in the console: GET http://127.0.0.1:5500/favicon.ico 404 (Not Found) -->
+    <!-- Source: https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error -->
+    <link rel="shortcut icon" href="#">
+
+    <!-- Imported libraries -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link href="/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="index-nav">
+        <div class="logo-container">
+            <img src="images/boat.jpg" alt="" class="accent-1-color mx-3" style="width: 50px; height: 50px;">
+        </div>
+        <h4>TravelLogue</h4>
+        <div class="separator-lg"></div>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+    </nav>
+
+    <div class="carousel thing">
+        <img src="/images/chicken.jpg" />
+    </div>
+
+    <section class="search-banner secondary-color py-5 mx-0">
+        <div class="container">
+            <div class="search-banner-row">
+                <h4 class="text-light text-center col-xl-auto px-1">Where do you want to go?</h4>
+
+                <div class="px-1 mt-2">
+                    <input type="text" class="form-control" placeholder="Where to go?" />
+                </div>
+
+                <div class="px-1 mt-2">
+                    <select class="form-control">
+                        <option>When?</option>
+                        <option>Now!</option>
+                        <option>In a Few Weeks</option>
+                        <option>Months from Now</option>
+                        <option>Next Year</option>
+                        <option>Later</option>
+                    </select>
+                </div>
+
+                <div class="px-1 mt-2">
+                    <select class="form-control">
+                        <option>Travel Type</option>
+                        <option>Plane</option>
+                        <option><i class="fas fa-car"></i>Car</option>
+                        <option>Boat</option>
+                    </select>
+
+                </div>
+
+                <div class="px-1 mt-2">
+                    <button class="btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1 class="text-center">Popular Destinations</h1>
+        <p class="text-center">Plan a visit to one of these great destinations.</p>
+
+
+    </div>
+
+    <!-- Imported libraries -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
