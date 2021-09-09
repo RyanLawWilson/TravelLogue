@@ -1,0 +1,10 @@
+{
+  "short_name": "8hr JS",
+  "name": "8hr JS project",
+  "author": "Ryan Wilson",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
