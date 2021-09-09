@@ -89,10 +89,10 @@ $(() => {
         var link = $(this).find('a').attr("href");
         var text = $(this).find(".masonry-grid-image--overlay").text();
         var $newDropdownItem = $(`<a class="dropdown-item" href="${link}">${text}</a>`);
-        console.log($newDropdownItem);
+        // console.log($newDropdownItem);
         $pagesDropdownMenu.append($newDropdownItem);
 
-        console.log($pagesDropdownMenu);
+        // console.log($pagesDropdownMenu);
     });
 });
 
