@@ -228,6 +228,7 @@ a:hover {
 @font-face {
     font-family: alex-brush;
     src: url(/fonts/AlexBrush-Regular.ttf);
+    font-display: swap;
 }
 
 .heading-container {
@@ -241,7 +242,7 @@ a:hover {
 }
 
 .heading-text {
-    font-family: alex-brush;
+    font-family: alex-brush, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 8em;
     letter-spacing: 15px;
     line-height: 0.75em;
